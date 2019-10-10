@@ -441,6 +441,7 @@ def all_exploit_configs():
     DeviceConfig('iBoot-1145.3'  ,        0x8950,  659, s5l895xx_overwrite, None, None), # S5L8950 (buttons)      2.30 seconds
     DeviceConfig('iBoot-1145.3.3',        0x8955,  659, s5l895xx_overwrite, None, None), # S5L8955 (buttons)      2.30 seconds
     DeviceConfig('iBoot-1704.10',         0x8960, 7936, s5l8960x_overwrite, None, None), # S5L8960 (buttons)     13.97 seconds
+    DeviceConfig('iBoot-2234.0.0.3.3',    0x8000, None,    t800x_overwrite,    6,    1), # T8000 (DFU loop)  NEW: 1.27 seconds
     DeviceConfig('iBoot-2651.0.0.1.31',   0x8002, None,    t800x_overwrite,    5,    1), # T8002 (DFU loop)  NEW: 1.27 seconds
     DeviceConfig('iBoot-2651.0.0.3.3',    0x8004, None,    t800x_overwrite,    5,    1), # T8004 (buttons)   NEW: 1.06 seconds
     DeviceConfig('iBoot-2696.0.0.1.33',   0x8010, None,    t8010_overwrite,    5,    1), # T8010 (buttons)   NEW: 0.68 seconds
