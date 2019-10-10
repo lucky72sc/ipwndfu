@@ -65,6 +65,8 @@ if __name__ == '__main__':
                 checkm8.exploit()
             elif 'CPID:8960' in serial_number:
                 checkm8.exploit()
+            elif 'CPID:8000' in serial_number:
+                checkm8.exploit()
             elif 'CPID:8002' in serial_number:
                 checkm8.exploit()
             elif 'CPID:8004' in serial_number:
