@@ -59,6 +59,8 @@ if __name__ == '__main__':
                 SHAtter.exploit()
             elif 'CPID:8947' in serial_number:
                 checkm8.exploit()
+            elif 'CPID:8000' in serial_number:
+                checkm8.exploit()
             elif 'CPID:8950' in serial_number:
                 checkm8.exploit()
             elif 'CPID:8955' in serial_number:
