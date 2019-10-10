@@ -60,8 +60,6 @@ if __name__ == '__main__':
             elif 'CPID:8947' in serial_number:
                 checkm8.exploit()
             elif 'CPID:8000' in serial_number:
-                limera1n.exploit()
-                SHAtter.exploit()
                 checkm8.exploit()
             elif 'CPID:8950' in serial_number:
                 checkm8.exploit()
