@@ -66,6 +66,10 @@ if __name__ == '__main__':
                 checkm8.exploit()
             elif 'CPID:8960' in serial_number:
                 checkm8.exploit()
+            elif 'CPID:7000' in serial_number:
+                checkm8.exploit()                           
+            elif 'CPID:8000' in serial_number:
+                checkm8.exploit()                           
             elif 'CPID:8002' in serial_number:
                 checkm8.exploit()
             elif 'CPID:8004' in serial_number:
@@ -124,15 +128,6 @@ if __name__ == '__main__':
             dfu.send_data(device, data)
             dfu.request_image_validation(device)
             dfu.release_device(device)
-
-        if opt == '-i':
-            start_time = time.time()
-            devices = dfu.acquire_all_devices()
-            end_time = time.time()
-
-            print 'Found %d devices (%.2fs).' % (len(devices), (end_time - start_time))
-            for dev in devices:
-                print '  (0x%X) Serial Number: %s' % (dev.idProduct, dev.serial_number)
 
         if opt == '--demote':
             device = dfu.acquire_device()
