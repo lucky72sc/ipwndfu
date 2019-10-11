@@ -531,6 +531,7 @@ def exploit():
   dfu.usb_reset(device)
   dfu.release_device(device)
 
+  
   device = dfu.acquire_device()
   if 'PWND:[checkm8]' not in device.serial_number:
     print 'ERROR: Exploit failed. Device did not enter pwned DFU Mode.'
