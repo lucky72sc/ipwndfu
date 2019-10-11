@@ -258,7 +258,7 @@ def payload(cpid):
     t8000_shellcode = prepare_shellcode('checkm8_armv7', constants_checkm8_t8000)
     assert len(t8000_shellcode) <= PAYLOAD_OFFSET_ARMV7
     assert len(t8000_handler) <= PAYLOAD_SIZE_ARMV7
-    return t8000_shellcode + '\0' * (PAYLOAD_OFFSET_ARMV7 - len(t8002_shellcode)) + t8000_handler   
+    return t8000_shellcode + '\0' * (PAYLOAD_OFFSET_ARMV7 - len(t8000_shellcode)) + t8000_handler   
   if cpid == 0x8002:
     constants_usb_t8002 = [
                 0x48818000, # 1 - LOAD_ADDRESS
