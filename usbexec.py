@@ -13,6 +13,7 @@ configs = [
   ExecConfig(('SecureROM for s5l8947xsi, Copyright 2011, Apple Inc.',   'RELEASE',     'iBoot-1458.2'),          aes_crypto_cmd=0x7060+1),
   ExecConfig(('SecureROM for s5l8950xsi, Copyright 2011, Apple Inc.',   'RELEASE',     'iBoot-1145.3'),          aes_crypto_cmd=0x7300+1),
   ExecConfig(('SecureROM for s5l8955xsi, Copyright 2011, Apple Inc.',   'RELEASE',     'iBoot-1145.3.3'),        aes_crypto_cmd=0x7340+1),
+  ExecConfig(('SecureROM for t8000si, Copyright 2007-2014, Apple Inc.', 'ROMRELEASE',  'iBoot-2234.0.0.3.3'),    aes_crypto_cmd=0x86DC+1),
   ExecConfig(('SecureROM for t8002si, Copyright 2007-2014, Apple Inc.', 'ROMRELEASE',  'iBoot-2651.0.0.1.31'),   aes_crypto_cmd=0x86DC+1),
   ExecConfig(('SecureROM for t8004si, Copyright 2007-2014, Apple Inc.', 'ROMRELEASE',  'iBoot-2651.0.0.3.3'),    aes_crypto_cmd=0x786C+1),
   ExecConfig(('SecureROM for s5l8960xsi, Copyright 2012, Apple Inc.',   'RELEASE',     'iBoot-1704.10'),         aes_crypto_cmd=0x10000B9A8),
